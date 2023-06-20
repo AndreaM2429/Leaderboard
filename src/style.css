@@ -1,7 +1,59 @@
-.hello {
-  color: red;
+.d-flex {
+  display: flex;
+  align-items: center;
 }
 
-body {
-  background-color: bisque;
+.container {
+  width: 90%;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.headTable h3 {
+  margin-right: 15px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.headTable table {
+  border: solid 3px black;
+  width: 100%;
+  font-weight: 600;
+  border-spacing: 0;
+}
+
+.opacy {
+  background-color: rgb(223, 222, 222);
+}
+
+tr {
+  height: 30px;
+  margin-left: 5px;
+}
+
+td {
+  padding-left: 10px;
+}
+
+.headTable {
+  width: 450px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: end;
+  width: 200px;
+}
+
+input[type="text"] {
+  border: solid 2px black;
+  height: 22px;
+  width: 200px;
+}
+
+form button {
+  width: 80px;
+  border: solid 2px black;
 }
