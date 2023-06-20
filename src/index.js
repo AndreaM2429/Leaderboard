@@ -1,14 +1,15 @@
-import _ from 'lodash';
 import './style.css';
+import displayScores from './Modules/loader.js';
 
-function component() {
-  const element = document.createElement('div');
+class Leaderboard {
+  static init() {
+    const newLeader = new Leaderboard();
+    return newLeader;
+  }
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
+  constructor() {
+    displayScores();
+  }
 }
 
-document.body.appendChild(component());
+Leaderboard.init();
