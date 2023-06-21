@@ -75,7 +75,9 @@ The leaderboard website displays scores submitted by different players. It also 
 
 - **Single page**
 - **Simple interface**
-- **Static page without iteractions**
+- **[Leaderboard](https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)API usage**
+- **Button refresh: get the information from the API**
+- **Add a new user and score using POST**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,7 +173,6 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Make API calls for the scores**
 - [ ] **Make deploy**
 - [ ] **Add more style**
 
