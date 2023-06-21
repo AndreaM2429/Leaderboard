@@ -7,6 +7,8 @@
   width: 90%;
   padding: 15px;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .headTable h3 {
@@ -16,10 +18,24 @@
 }
 
 .headTable table {
-  border: solid 3px black;
   width: 100%;
   font-weight: 600;
   border-spacing: 0;
+}
+
+.tablecontainer {
+  max-height: 400px;
+  overflow-y: auto;
+  border: solid 3px black;
+}
+
+.tablecontainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tablecontainer::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 4px;
 }
 
 .opacy {
@@ -56,4 +72,10 @@ input[type="text"] {
 form button {
   width: 80px;
   border: solid 2px black;
+}
+
+#refreshMessage {
+  margin-left: 18px;
+  color: rgb(255, 38, 38);
+  display: none;
 }
