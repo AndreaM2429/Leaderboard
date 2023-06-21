@@ -13,18 +13,21 @@
       <section class="headTable">
         <div class="d-flex">
           <h3>Recent scores</h3>
-          <button type="button">Refresh</button>
+          <button id="refresh" type="button">Refresh</button>
+          <span id="refreshMessage">Table updated!</span>
         </div>
-        <table>
-          <tbody id="scoreTable"></tbody>
-        </table>
+        <div class="tablecontainer">
+          <table>
+            <tbody id="scoreTable"></tbody>
+          </table>
+        </div>
       </section>
       <section>
         <h3>Add your score</h3>
-        <form action="">
-          <input type="text" name="player" id="player" placeholder="Your name" />
-          <input type="text" name="score" id="score" placeholder="Your score" />
-          <button type="submit">Sumit</button>
+        <form>
+          <input required type="text" name="player" id="player" placeholder="Your name" />
+          <input required type="text" name="score" id="score" placeholder="Your score" />
+          <button id="submitButton" type="submit">Sumit</button>
         </form>
       </section>
     </main>
