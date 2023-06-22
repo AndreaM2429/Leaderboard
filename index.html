@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+  <body>
+    <head>
+      <h1>Leaderboard</h1>
+    </head>
+    <main class="d-flex container">
+      <section class="headTable">
+        <div class="d-flex title">
+          <h3>Recent scores</h3>
+          <button id="refresh" type="button">Refresh</button>
+          <span id="refreshMessage">Table updated!</span>
+        </div>
+        <div class="tablecontainer">
+          <table>
+            <tbody id="scoreTable"></tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h3>Add your score</h3>
+        <form>
+          <input required type="text" name="player" id="player" placeholder="Your name" />
+          <input required type="text" name="score" id="score" placeholder="Your score" />
+          <button id="submitButton" type="submit">Sumit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
