@@ -1,7 +1,7 @@
 body {
   background-image: url('Img/back_ligth.jpg');
   background-size: 100vw 100vh;
-  font-family: Courier New;
+  font-style: oblique;
 }
 
 .d-flex {
@@ -18,8 +18,7 @@ body {
   gap: 20px;
 }
 
-h1{
-  font-family: Lucida Handwriting;
+h1 {
   margin-left: 25px;
   margin-top: 40px;
 }
@@ -28,7 +27,6 @@ h1{
   margin-right: 15px;
   font-size: 22px;
   font-weight: 800;
-  font-family: Lucida Handwriting;
 }
 
 .headTable table {
@@ -91,11 +89,22 @@ form button,
 .title button {
   padding: 7px;
   font-size: 15px;
+  font-style: oblique;
   width: 120px;
   border-radius: 10px;
   margin-bottom: 10px;
   border: transparent;
   background-color: rgba(248, 200, 208, 0.897);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  border: solid 2px;
+  border-radius: 10px;
+  border-image: linear-gradient(345deg, rgb(93, 185, 221) 15%, rgb(230, 116, 186) 30%, rgb(147, 65, 172) 65%, rgb(255, 255, 255) 100%) 1;
 }
 
 #refreshMessage {
@@ -106,7 +115,7 @@ form button,
   margin-bottom: 8px;
 }
 
-.title{
+.title {
   flex-wrap: wrap;
 }
 
@@ -114,6 +123,7 @@ form button,
   .container {
     flex-direction: row;
   }
+
   .headTable {
     width: 450px;
   }
