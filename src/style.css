@@ -1,9 +1,16 @@
+body {
+  background-image: url('Img/back_ligth.jpg');
+  background-size: 100vw 100vh;
+  font-family: Courier New;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
 }
 
 .container {
+  flex-direction: column-reverse;
   width: 90%;
   padding: 15px;
   justify-content: space-around;
@@ -11,10 +18,17 @@
   gap: 20px;
 }
 
+h1{
+  font-family: Lucida Handwriting;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
 .headTable h3 {
   margin-right: 15px;
   font-size: 22px;
   font-weight: 800;
+  font-family: Lucida Handwriting;
 }
 
 .headTable table {
@@ -26,7 +40,9 @@
 .tablecontainer {
   max-height: 400px;
   overflow-y: auto;
-  border: solid 3px black;
+  border: solid 5px transparent;
+  border-image: linear-gradient(135deg, rgb(93, 185, 221) 15%, rgb(230, 116, 186) 30%, rgb(147, 65, 172) 65%, rgb(255, 255, 255) 100%) 1;
+  border-radius: 10px;
 }
 
 .tablecontainer::-webkit-scrollbar {
@@ -52,7 +68,7 @@ td {
 }
 
 .headTable {
-  width: 450px;
+  width: 70%;
 }
 
 form {
@@ -64,18 +80,41 @@ form {
 }
 
 input[type="text"] {
-  border: solid 2px black;
+  border-width: 3px;
+  border-image: linear-gradient(135deg, rgb(93, 185, 221) 15%, rgb(230, 116, 186) 30%, rgb(147, 65, 172) 65%, rgb(255, 255, 255) 100%) 1;
   height: 22px;
   width: 200px;
+  padding: 8px;
 }
 
-form button {
-  width: 80px;
-  border: solid 2px black;
+form button,
+.title button {
+  padding: 7px;
+  font-size: 15px;
+  width: 120px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: transparent;
+  background-color: rgba(248, 200, 208, 0.897);
 }
 
 #refreshMessage {
   margin-left: 18px;
-  color: rgb(255, 38, 38);
+  font-size: 16px;
+  font-weight: 800;
   display: none;
+  margin-bottom: 8px;
+}
+
+.title{
+  flex-wrap: wrap;
+}
+
+@media (min-width: 760px) {
+  .container {
+    flex-direction: row;
+  }
+  .headTable {
+    width: 450px;
+  }
 }
