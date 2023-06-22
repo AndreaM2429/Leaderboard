@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -69,7 +70,7 @@ The leaderboard website displays scores submitted by different players. It also 
 </details>
 <br>
 
-### Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
 > In this section there are some features that you can notice in the project.
 
@@ -77,6 +78,12 @@ The leaderboard website displays scores submitted by different players. It also 
 - **[Leaderboard](https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)API usage**
 - **Button refresh: get the information from the API**
 - **Add a new user and score using POST**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live demo <a name="live-demo"></a>
+
+[Live demo](https://andream2429.github.io/Leaderboard/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
