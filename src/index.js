@@ -1,6 +1,6 @@
 import './style.css';
-import sending from './Modules/postAPI.js';
-import getting from './Modules/getAPI.js';
+import sendData from './Modules/postAPI.js';
+import getAPI from './Modules/getAPI.js';
 
 const submitData = document.querySelector('form');
 const user = document.querySelector('#player');
@@ -17,21 +17,21 @@ class Leaderboard {
   constructor() {
     submitData.addEventListener('submit', (event) => {
       event.preventDefault();
-      sending(user.value, score.value);
+      sendData(user.value, score.value);
       setTimeout(() => {
-        getting();
+        getAPI();
       }, 300);
       user.value = '';
       score.value = '';
     });
     refreshButton.addEventListener('click', () => {
-      getting();
+      getAPI();
       refreshMessage.style.display = 'flex';
       setTimeout(() => {
         refreshMessage.style.display = 'none';
       }, 1000);
     });
-    getting();
+    getAPI();
   }
 }
 

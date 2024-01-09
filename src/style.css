@@ -1,5 +1,5 @@
 body {
-  background-image: url('Img/back_ligth.jpg');
+  background-image: url('Img/back.jpg');
   background-size: 100vw 100vh;
   font-style: oblique;
 }
@@ -21,6 +21,11 @@ body {
 h1 {
   margin-left: 25px;
   margin-top: 40px;
+}
+
+h3 {
+  color: white;
+  font-weight: 900;
 }
 
 .headTable h3 {
@@ -48,8 +53,8 @@ h1 {
 }
 
 .tablecontainer::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 4px;
+  background-color: rgb(128, 8, 133);
+  border-radius: 5px;
 }
 
 .opacy {
@@ -69,6 +74,10 @@ td {
   width: 70%;
 }
 
+table tr:nth-child(odd) { background-color: rgb(27, 178, 204); }
+
+table tr:nth-child(even) { background-color: rgb(255, 255, 255); }
+
 form {
   display: flex;
   flex-direction: column;
@@ -77,12 +86,19 @@ form {
   width: 200px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
   border-width: 3px;
   border-image: linear-gradient(135deg, rgb(93, 185, 221) 15%, rgb(230, 116, 186) 30%, rgb(147, 65, 172) 65%, rgb(255, 255, 255) 100%) 1;
   height: 22px;
   width: 200px;
   padding: 8px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 form button,
@@ -113,6 +129,7 @@ button:active {
   font-weight: 800;
   display: none;
   margin-bottom: 8px;
+  color: white;
 }
 
 .title {
