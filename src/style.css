@@ -77,13 +77,21 @@ form {
   width: 200px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
   border-width: 3px;
   border-image: linear-gradient(135deg, rgb(93, 185, 221) 15%, rgb(230, 116, 186) 30%, rgb(147, 65, 172) 65%, rgb(255, 255, 255) 100%) 1;
   height: 22px;
   width: 200px;
   padding: 8px;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type="number"] { -moz-appearance:textfield; }
 
 form button,
 .title button {
