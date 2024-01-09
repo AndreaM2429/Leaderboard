@@ -1,4 +1,4 @@
-const sending = async (player, points) => {
+const sendData = async (player, points) => {
   const dataplayer = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/lnOTY3pQ8ZWWUEXQqBlg/scores/', {
     method: 'POST',
     headers: {
@@ -13,4 +13,4 @@ const sending = async (player, points) => {
   return sendComplete;
 };
 
-export default sending;
+export default sendData;
